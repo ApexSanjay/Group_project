@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\PostController;
+use App\Http\Controllers\registrationController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -16,11 +16,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('main-form');
+    return view('registration');
 });
 
-//Thapa Sanjay
-Route::get('database-page',[PostController::class,'db']);
-Route::get('main-form',[PostController::class,'index']);
-Route::post('store-form', [PostController::class, 'store']);
-//Thapa Sanjay
+Route::get('registration',[registrationController::class,'index']);
+Route::post('store-form', [registrationController::class, 'store']);

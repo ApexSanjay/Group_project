@@ -17,10 +17,9 @@ return new class extends Migration
         /*Table of Columns for registration Table*/
         $table->increments('registrationID');
         $table->integer('memberID');
-        $table->string('fName');
-        $table->string('lName');
-        $table->boolean('event');
-        $table->boolean('eventID')->references('eventID')->on('events');
+        $table->string('firstName');
+        $table->string('lastName');
+        $table->string('event');
     });
     }
 
