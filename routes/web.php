@@ -16,8 +16,27 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    return view('home');
+});
+
+//Registration routes
+Route::get('registration',[registrationController::class,'index']);
+Route::post('store-form', [registrationController::class, 'store']);
+//Registration routes
+
+Route::get('/home', function () {
+    return view('home');
+});
+
+Route::get('/registration', function () {
     return view('registration');
 });
 
-Route::get('registration',[registrationController::class,'index']);
-Route::post('store-form', [registrationController::class, 'store']);
+Route::get('/about', function () {
+    return view('about');
+});
+
+Route::get('/contact', function () {
+    return view('contact');
+});
+

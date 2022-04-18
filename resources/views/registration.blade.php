@@ -43,7 +43,7 @@
                 </optgroup>
                 <optgroup label="Services">
                     <option value="Counselling">Counselling</option>
-                    <option value="psychology emergency">psychology emergency</option>
+                    <option value="Emergency psychology">Emergency psychology</option>
                 </optgroup>
             </select>
         </div>
