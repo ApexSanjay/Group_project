@@ -28,6 +28,18 @@ Route::get('/home', function () {
     return view('home');
 });
 
+Route::get('/well_youth', function () {
+    return view('well_youth');
+});
+
+Route::get('/ins_tra_course', function () {
+    return view('ins_tra_course');
+});
+
+Route::get('/to_do_list', function () {
+    return view('to_do_list');
+});
+
 Route::get('/registration', function () {
     return view('registration');
 });
