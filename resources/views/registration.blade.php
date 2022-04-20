@@ -37,7 +37,7 @@
             <label for="events">Event</label>
             <select name="events" id="events">
                 <optgroup label="Courses">
-                    <option value="Laughing Yoga">Laughing Yoga</option>
+                    <option value="Laughter Yoga">Laughing Yoga</option>
                     <option value="Healthy Cooking">Healthy Cooking</option>
                     <option value="Mental Wellness">Mental Wellness</option>
                 </optgroup>

@@ -52,17 +52,17 @@
   <div class="column">
     <img src= {{ asset("img/hkyg.jpg") }} alt="Courses" style="width:100%">
     <h3>
-      <a href="courses">Courses</a></h3>
+      <a href="/courses">Courses</a></h3>
   </div>
   <div class="column">
     <img src= {{ asset("img/hkyouth.jpg") }} alt="Youth" style="width:100%">
     <h3>
-      <a href="youth">Youth</a></h3>
+      <a href="/youth">Youth</a></h3>
   </div>
   <div class="column">
     <img src= {{ asset("img/hkyg1.jpg") }} alt="Services" style="width:100%">
     <h3>
-      <a href="services">Services</a></h3>
+      <a href="/services">Services</a></h3>
   </div>
 </div>
 

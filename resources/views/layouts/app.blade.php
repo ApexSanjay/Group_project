@@ -7,12 +7,7 @@
     </head>
     <body>
         @include('inc.navbar')
-        
-             @yield('content')
-        
-
-            
-        
+        @yield('content')
     </body>
 
 </html>
