@@ -55,3 +55,15 @@ Route::get('/contact', function () {
 Route::get('/courses', function () {
     return view('course');
 });
+
+Route::get('/youth', function () {
+    return view('youth');
+});
+
+Route::get('/event2', function () {
+    return view('youth_event2');
+});
+
+Route::get('/gallery', function () {
+    return view('gallery');
+});
