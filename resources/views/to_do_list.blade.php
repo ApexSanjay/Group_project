@@ -98,12 +98,12 @@ p{
 </style>
 <body>
 
-<img src="bannner.jpeg" alt="Chicago" style="width:100%">
+<img src="wellbanner.jpg" alt="wellbanner" style="width:100%">
 <br/>
 <br/>
 <div class="hero-image">
   <div class="hero-text">
-  <h2>To Do List</h2>
+  <h2>Life Goal</h2>
     
   </div>
 </div>
@@ -151,7 +151,7 @@ p{
       <a href="#diyclass">DIY Class</a></h3>
   </div>
 </div>
-
+<hr><hr>
 <p>
 <h4><a name="camping">Camping :</h4>
     <ul>
@@ -160,6 +160,7 @@ p{
         <li>​Connect with Others</li>
     </ul>
 </p>
+<hr>
 <p>
 <h4><a name="pcamp">Positive experience camp :</h4>
     <ul>
@@ -170,6 +171,7 @@ p{
         <li>Acquiring new knowledge</li>
     </ul>
 </p>
+<hr>
 <p>
 <h4><a name="fcamp">Family day camp :</h4>
     <ul>
@@ -179,6 +181,7 @@ p{
         <li>​Options for activities are endless</li>
     </ul>
 </p>
+<hr>
 <p>
 <h4><a name="tcourse">Training Course :</h4>
     <ul>
@@ -188,6 +191,7 @@ p{
         <li>​Make youself more positive</li>
     </ul>
 </p>
+<hr>
 <p>
 <h4><a name="concert">Concert :</h4>
     <ul>
@@ -197,6 +201,7 @@ p{
         <li>​Improves memory. Assists in memory recall</li>
     </ul>
 </p>
+<hr>
 <p>
 <h4><a name="diyclass">DIY Class :</h4>
     <ul>

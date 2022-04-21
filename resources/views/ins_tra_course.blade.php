@@ -91,7 +91,7 @@ p{
 </style>
 <body>
 
-<img src="bannner.jpeg" alt="Chicago" style="width:100%">
+<img src="wellbanner.jpg" alt="wellbanner" style="width:100%">
 <br/>
 <br/>
 <div class="hero-image">

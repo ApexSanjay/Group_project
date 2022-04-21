@@ -91,7 +91,7 @@ p{
 </style>
 <body>
 
-<img src="bannner.jpeg" alt="Chicago" style="width:100%">
+<img src="wellbanner.jpg" alt="wellbanner" style="width:100%">
 <br/>
 <br/>
 <div class="hero-image">
@@ -103,9 +103,9 @@ p{
 
 <p>
   <ul>
-    <li>After landing in life, the most important thing is to live a happy life and do what you want to do. But sometimes I want to do something, but I have no one to accompany me, so I am forced to shelve or cancel the plan. It is also possible or want to find fresh combinations, so that ordinary things can sparkle and leave better memories.</li>
-    <li>It is to make everyone's life more exciting. Do what you want. Now we are happy to arrange and accompany you and be a good helper for you to find the most fulfilling life.</li>
-    <li>As landers, there are different codes. Some people say it is the third age, and some people say it is "Senior" Ying. We believe that today's landers are also young people, and they can also use their strengths to make their lives happy and happy to become LOHAS youths.</li>
+    <li>After landing in life, the most important thing is to <mark>live a happy life</mark> and <mark>do what you want to do</mark>. But sometimes I want to do something, but I have no one to accompany me, so I am forced to shelve or cancel the plan. It is also possible or want to find fresh combinations, so that ordinary things can sparkle and leave better memories.</li>
+    <li>It is to make everyone's life more <mark>exciting</mark>. Do what you want. Now we are happy to arrange and accompany you and be a good helper for you to find the most fulfilling life.</li>
+    <li>As landers, there are different codes. Some people say it is the third age, and some people say it is "Senior" Ying. We believe that today's landers are also young people, and they can also use their strengths to make their lives happy and happy to become <mark>LOHAS youths</mark>.</li>
   </ul>
 </p>
 
@@ -124,7 +124,7 @@ p{
 </div>
 
 
-<body>
+
 
 <footer>
 <div class="page-footer col-sm-12 font-small indigo">
