@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\gameController;
 use App\Http\Controllers\registrationController;
 use App\Http\Controllers\questionaireController;
 use Illuminate\Support\Facades\Route;
@@ -29,6 +30,11 @@ Route::post('store-form', [registrationController::class, 'store']);
 Route::get('questionaire',[questionaireController::class,'index']);
 Route::post('questionaire-form',[questionaireController::class, 'store']);
 //Questionaire routes
+
+//Game routes
+Route::get('health_game',[gameController::class, 'index']);
+Route::get('game-form',[gameController::class, 'mark']);
+//Game routes
 
 Route::get('/home', function () {
     return view('home');
@@ -64,4 +70,8 @@ Route::get('/courses', function () {
 
 Route::get('/questionaire', function () {
     return view('questionaire');
+});
+
+Route::get('/health_game', function () {
+    return view('health_game');
 });

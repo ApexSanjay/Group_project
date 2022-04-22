@@ -1,0 +1,15 @@
+/*Dotted line*/
+hr.solid {
+    border-top: 3px solid #bbb;
+  }
+
+/*Scoring*/
+.first{
+    color:red;
+}
+.second{
+    color:blue;
+}
+.third{
+    color:green;
+}
