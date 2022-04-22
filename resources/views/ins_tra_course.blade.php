@@ -130,16 +130,16 @@ p{
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100 h-100" src="course1.jpg" alt="First slide">
+      <img class="d-block w-100 h-100" src = {{ asset("img/course1.jpg") }} alt="First slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="course2.jpg" alt="Second slide">
+      <img class="d-block w-100" src= {{ asset("course2.jpg") }} alt="Second slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="course3.jpg" alt="Third slide">
+      <img class="d-block w-100" src= {{ asset("course3.jpg") }} alt="Third slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="course4.jpg" alt="Forth slide">
+      <img class="d-block w-100" src= {{ asset("course4.jpg") }} alt="Forth slide">
     </div>
   </div>
 </div>

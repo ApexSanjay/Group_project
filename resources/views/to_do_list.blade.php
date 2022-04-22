@@ -98,7 +98,7 @@ p{
 </style>
 <body>
 
-<img src="bannner.jpeg" alt="Chicago" style="width:100%">
+<img src= {{ asset("img/bannner.jpeg") }} alt="Chicago" style="width:100%">
 <br/>
 <br/>
 <div class="hero-image">
@@ -119,34 +119,34 @@ p{
 <u><h4>Our activities</h4></u>
 <div class="row">
 <div class="column">
-    <img src="act1.jpg" alt="camping" style="width:100%">
+    <img src= {{ asset("img/act1.jpg") }} alt="camping" style="width:100%">
     <h3>
       <a href="#camping">Camping</a></h3>
   </div>
   <div class="column">
-    <img src="act2.jpg" alt="pcamp" style="width:100%">
+    <img src= {{ asset("img/act2.jpg") }} alt="pcamp" style="width:100%">
     <h3>
       <a href="#pcamp">Positive experience camp</a></h3>
   </div>
   <div class="column">
-    <img src="act3.jpg" alt="fcamp" style="width:100%">
+    <img src= {{ asset("img/act3.jpg") }} alt="fcamp" style="width:100%">
     <h3>
       <a href="#fcamp">Family day camp</a></h3>
   </div>
 </div>
 <div class="row">
 <div class="column">
-    <img src="act4.jpg" alt="tcourse" style="width:100%">
+    <img src= {{ asset("img/act4.jpg") }} alt="tcourse" style="width:100%">
     <h3>
       <a href="#tcourse">Training Course</a></h3>
   </div>
   <div class="column">
-    <img src="act5.jpg" alt="concert" style="width:100%">
+    <img src={{ asset("img/act5.jpg") }} alt="concert" style="width:100%">
     <h3>
       <a href="#concert">Concert</a></h3>
   </div>
   <div class="column">
-    <img src="act6.jpg" alt="diyclass" style="width:100%">
+    <img src= {{ asset("img/act6.jpg") }} alt="diyclass" style="width:100%">
     <h3>
       <a href="#diyclass">DIY Class</a></h3>
   </div>

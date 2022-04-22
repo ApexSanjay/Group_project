@@ -24,7 +24,7 @@
 			<p>Person in Charge: Dr Chirs Chow </p> <p>Number of seats available: 30</p>
             <p>
              Laughter yoga involves a series of movement and breathing exercises to promote deliberate laughter.</br>
-             It is used as a remedy for physical, psychological, and spiritual ailments, as advocatSes believe that intentional laughter can provide benefits equal to those of spontaneous laughter
+             It is used as a remedy for physical, psychological, and spiritual ailments, as advocates believe that intentional laughter can provide benefits equal to those of spontaneous laughter
             </p>
             <h4 align="middle"><span class="learn">What you will learn?</span></h4> 
             <p>

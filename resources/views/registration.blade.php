@@ -42,8 +42,8 @@
                     <option value="Mental Wellness">Mental Wellness</option>
                 </optgroup>
                 <optgroup label="Services">
-                    <option value="Counselling">Counselling</option>
-                    <option value="Emergency psychology">Emergency psychology</option>
+                    <option value="Education">Education</option>
+                    <option value="Volunteering">Volunteering</option>
                 </optgroup>
             </select>
         </div>

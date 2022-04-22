@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\registrationController;
+use App\Http\Controllers\questionaireController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -23,6 +24,11 @@ Route::get('/', function () {
 Route::get('registration',[registrationController::class,'index']);
 Route::post('store-form', [registrationController::class, 'store']);
 //Registration routes
+
+//Questionaire routes
+Route::get('questionaire',[questionaireController::class,'index']);
+Route::post('questionaire-form',[questionaireController::class, 'store']);
+//Questionaire routes
 
 Route::get('/home', function () {
     return view('home');
@@ -54,4 +60,8 @@ Route::get('/contact', function () {
 
 Route::get('/courses', function () {
     return view('course');
+});
+
+Route::get('/questionaire', function () {
+    return view('questionaire');
 });
