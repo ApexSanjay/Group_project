@@ -11,11 +11,12 @@
     <div class="alert alert-success">
         {{ session('status') }}
     </div>
-     @endif
+    @endif
     <div class="container mt-5">
     <div class="card">
         <div class="card-body">
         <form name="questionaire" id="questionaire" method="post" action="{{url('questionaire-form')}}">
+        @csrf
         <h5 class="card-title" align="middle">Questionaire</h5>
         <div class="form-row">
             <div class="col">
@@ -77,6 +78,7 @@
 
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
+</div>
     </div>
     </div>
     </body>
