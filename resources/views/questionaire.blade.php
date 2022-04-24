@@ -17,7 +17,7 @@
         <div class="card-body">
         <form name="questionaire" id="questionaire" method="post" action="{{url('questionaire-form')}}">
         @csrf
-        <h5 class="card-title" align="middle">Questionaire</h5>
+        <h5 class="card-title" align="middle">Questionnaire</h5>
         <div class="form-row">
             <div class="col">
                 <label for="memberID">Member ID</label>

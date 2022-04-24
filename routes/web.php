@@ -3,6 +3,7 @@
 use App\Http\Controllers\gameController;
 use App\Http\Controllers\registrationController;
 use App\Http\Controllers\questionaireController;
+use App\Http\Controllers\adminController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -35,6 +36,10 @@ Route::post('questionaire-form',[questionaireController::class, 'store']);
 Route::get('health_game',[gameController::class, 'index']);
 Route::get('game-form',[gameController::class, 'mark']);
 //Game routes
+
+//Admin routes
+Route::get('admin',[adminController::class, 'index']);
+//Admin routes
 
 Route::get('/home', function () {
     return view('home');

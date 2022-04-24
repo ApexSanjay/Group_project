@@ -9,9 +9,24 @@
 </head>
 <body>
   <div class="container mt-4">
+  @if ($errors->any())
+  <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+  @endif
+
   @if(session('status'))
     <div class="alert alert-success">
         {{ session('status') }}
+    </div>
+  @endif
+  @if(session('message'))
+    <div class="alert alert-danger">
+        {{ session('message') }}
     </div>
   @endif
   <div class="card">
@@ -23,15 +38,15 @@
        @csrf
        <div class="form-group">
             <label for="memberID">Member ID</label>
-            <input type="number" id="memberID" name="memberID" class="form-control" required="">
+            <input type="number" id="memberID" name="memberID" class="form-control" value="{{ old('memberID') }}" required="">
         </div>
         <div class="form-group">
           <label for="FirstName">First Name</label>
-          <input type="text" id="FirstName" name="FirstName" class="form-control" required="">
+          <input type="text" id="FirstName" name="FirstName" class="form-control" value="{{ old('FirstName') }}" required="">
         </div>
         <div class="form-group">
           <label for="LastName">Last Name</label>
-          <input type="text" id="LastName" name="LastName" class="form-control" required="">
+          <input type="text" id="LastName" name="LastName" class="form-control" value="{{ old('LastName') }}" required="">
         </div>
         <div class="form-group">
             <label for="events">Event</label>

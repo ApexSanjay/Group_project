@@ -5,6 +5,11 @@
     <title>Courses</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href= {{ asset('css/course.css') }}>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
     </head>
     <body>
     <!--Header-->
@@ -41,7 +46,28 @@
             </p>
 		</div>
 		<div class="col_img">
-			<img src={{ asset("img/laughter.jpg") }} >
+      <div id="carouselControls1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src={{ asset("img/laughter.jpg") }} alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src={{ asset("img/laugh2.jpg") }} alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src={{ asset("img/laugh3.jpg") }} alt="Third slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselControls1" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselControls1" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+      </a>
+</div>
+
 		</div>
 	</div>
     <hr class="solid">
@@ -68,8 +94,31 @@
             </p>
         </div>
         <div class="col_img">
-            <img src = {{ asset("img/chef.jpg") }}>
+
+        <div id="carouselControls2" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src={{ asset("img/chef.jpg") }} alt="First slide">
+          </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src={{ asset("img/chef2.jpg") }} alt="Second slide">
         </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src={{ asset("img/chef3.jpg") }} alt="Third slide">
+        </div>
+        </div>
+      <a class="carousel-control-prev" href="#carouselControls2" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselControls2" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+      </a>
+      </div>
+
+
+      </div>
     </div>
     <hr class="solid">
     <div class="rows">
@@ -95,7 +144,32 @@
             </p>
         </div>
         <div class="col_img">
-            <img src = {{ asset("img/happy.jpg") }}>
+
+            <div id="carouselControls3" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src={{ asset("img/happy.jpg") }} alt="First slide">
+          </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src={{ asset("img/happy2.png") }} alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src={{ asset("img/happy3.jpg") }} alt="Third slide">
+        </div>
+        </div>
+      <a class="carousel-control-prev" href="#carouselControls3" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselControls3" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+      </a>
+      </div>
+
+
+
+
         </div>
     </div>
     <hr class="solid">
@@ -143,5 +217,6 @@
           <!-- Copyright -->
         </div>
     </footer>
+    <script src=”https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js” integrity=”sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/” crossorigin=”anonymous”></script>
     </body>
 </html>

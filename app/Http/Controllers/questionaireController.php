@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\questionaire;
+use App\Models\questionnaire;
+use Illuminate\Support\Facades\DB;
 
 class questionaireController extends Controller
 {
@@ -12,16 +13,16 @@ class questionaireController extends Controller
     }
 
     public function store(Request $request){
-        $question = new questionaire ();
+        $question = new questionnaire();
         $question->memberID = $request->memberID;
         $question->firstName = $request->firstName;
         $question->lastName = $request->lastName;
         $question->activity = $request->selectEvent;
         $question->instructorRating = $request->instructorRating;
         $question->activityRating = $request->activityRating;
-        $question->futureActivityParticipation = $request->inlineRadioOptions;
+        $question->futureParticipation = $request->inlineRadioOptions;
         $question->feedback = $request->feedback;
         $question->save();
-        return redirect('questionaire')->with('status', 'Sucessfull');
+        return redirect('questionaire')->with('status', 'Sucessfully inserted to Database');
     }
 }

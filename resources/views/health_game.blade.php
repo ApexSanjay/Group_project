@@ -30,7 +30,7 @@
                             <option value="0">It is an illogical way of thinking</option>
                     </select>
                     </br></br>
-                    <label for"secondQ">Do Children Expierence Mental Health Problems?</label>
+                    <label for"secondQ">Do Children experience mental health problems?</label>
                     <select class="custom-select" name="secondQ">
                             <option value="20">Yes, Young children may show early warning signs of mental health concerns.</option>
                             <option value="0">No, Children don't experience mental health problems.</option>

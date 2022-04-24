@@ -13,7 +13,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('questionaire', function (Blueprint $table) {
+        Schema::create('Questionnaire', function (Blueprint $table) {
         $table->increments('questionaireID');
         $table->integer('memberID');
         $table->string('firstName');
@@ -21,7 +21,7 @@ return new class extends Migration
         $table->string('activity');
         $table->integer('instructorRating');
         $table->integer('activityRating');
-        $table->string('futureActivityParticipation');
+        $table->string('futureParticipation');
         $table->text('feedback');
         });
     }

@@ -19,8 +19,6 @@ return new class extends Migration
                 $table->string('firstName');
                 $table->string('lastName');
                 $table->integer('age');
-                $table->boolean('studentStatus');
-                $table->boolean('elderlyStatus');
                 $table->string('email')->unique();
 
         });

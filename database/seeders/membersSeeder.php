@@ -20,16 +20,12 @@ class membersSeeder extends Seeder
                 'firstName'=>'Sanjay',
                 'lastName'=>'Thapa',
                 'age'=>21,
-                'studentStatus'=>1,
-                'elderlyStatus'=>0,
                 'email'=>'test@gmail.com'
             ],
             [
                 'firstName'=>'Daniel',
                 'lastName'=>'Lui',
                 'age'=>21,
-                'studentStatus'=>0,
-                'elderlyStatus'=>1,
                 'email'=>'daniel@gmail.com'
             ]
         ];
