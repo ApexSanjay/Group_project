@@ -80,3 +80,11 @@ Route::get('/questionaire', function () {
 Route::get('/health_game', function () {
     return view('health_game');
 });
+
+Route::get('/gallery', function () {
+    return view('gallery');
+});
+
+Route::get('/youth', function () {
+    return view('youth_event2');
+});
