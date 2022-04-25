@@ -82,6 +82,16 @@ object-fit: contain;
   background-size: 50% 50%;
  /* background-blend-mode: overlay;*/
 }
+
+b img:last-child {
+  display: none;
+}
+b:hover img:last-child {
+  display: block;
+}
+b:hover img:first-child {
+  display: none;
+}
 </style>
 </head>
 <h1>Youth Service</h1>
@@ -127,8 +137,12 @@ object-fit: contain;
 
     We are happy to contact Sai Kung Stray Friends to introduce the right way to treat stray dogs and give our volunteers a chance to interact with stray dog
   <br><br>
-    Our volunteers claim this is a unique experience to take care of animal outside from home and surprise of the dog are friendly at first glance</p><br><br>
-    <a href="gallery">view in gallery-></a>
+    Our volunteers claim this is a unique experience to take care of animal outside from home and surprise of the dog are friendly at first glance</p>
+    <b>
+        <img src= {{ asset("img/strong_dog.jpg") }} style="width:450px; padding-left:30%">
+        <img src= {{ asset("img/annoying_dog.webp") }} style="width:500px; padding-left:30%">
+</b>
+    <a href="Gallery">view in gallery-></a>
     </p></p>
     </div>
     </div>
