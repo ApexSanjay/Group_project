@@ -128,7 +128,7 @@ object-fit: contain;
     We are happy to contact Sai Kung Stray Friends to introduce the right way to treat stray dogs and give our volunteers a chance to interact with stray dog
   <br><br>
     Our volunteers claim this is a unique experience to take care of animal outside from home and surprise of the dog are friendly at first glance</p><br><br>
-    <a href="Gallery.blade.php">view in gallery-></a>
+    <a href="gallery">view in gallery-></a>
     </p></p>
     </div>
     </div>
