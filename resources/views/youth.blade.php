@@ -132,7 +132,7 @@ object-fit: contain;
 
     We cooperate with HKFoodWork and ImpactHK to reward teens for helping collecting bread in daytime or help sharing it in night time.
     We are Glad that teens are having fun when the event ongoing, and decided to continue helping after the event end!<br><br>
-    <a href="Gallery">view in gallery-></a>
+    <a href="gallery">view in gallery-></a>
     </p></p>
     </div>
     </div>
