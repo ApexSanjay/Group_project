@@ -1,0 +1,56 @@
+
+h1{
+  text-align:center;
+  }
+h3{
+  text-align:center;
+  font-size:23px;
+  }
+
+p{
+  text-align:center;
+  font-size:23px;
+  }
+
+
+.column{
+  float:left;
+  width:33%;
+  height:auto;
+  padding:2px;
+  }
+  
+.row::after{
+  display:table;
+  content:"";
+  clear:both;
+  border:5px;
+  }
+
+.page-footer{
+  width:100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  background-color: lightgray;
+  background-repeat: no-repeat;
+  background-attachment: scroll; 
+  background-size: 50% 50%;
+ /* background-blend-mode: overlay;*/
+}
+
+a{
+  color:black;
+}
+
+.taichi{
+  border:10px outset silver;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}

@@ -36,4 +36,5 @@ class adminController extends Controller
     public function logout(){
         return view('home');
     }
+
 }

@@ -1,0 +1,16 @@
+.breadcrumb {
+    font-size: 15px;
+    font-weight: 500;
+    padding: 20px 0;
+    margin-left: 0;
+    background: none;
+  }
+  
+  .breadcrumb-item + .breadcrumb-item::before {
+          content: ">";
+  }
+.breadcrumb a {
+    
+    text-transform: capitalize;
+  
+  }

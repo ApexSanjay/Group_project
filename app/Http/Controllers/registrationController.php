@@ -27,7 +27,7 @@ class registrationController extends Controller
         $register->lastName = $request->LastName;
         $register->event = $request->events;
         $register->save();
-        return redirect('registration')->with('status', 'Sucessfull');
+        return redirect('registration')->with('status', 'Successful');
 
     }
 }

@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap");
 
 /*Text for Icon*/
+a{
+  color:black;
+}
+
 .icon_text {
   color:crimson;
   padding-top: 5%;
@@ -97,4 +101,17 @@ body {
 
 .learn{
   color:coral;
+}
+
+.page-footer{
+  width:100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  background-color: lightgray;
+  background-repeat: no-repeat;
+  background-attachment: scroll; 
+  background-size: 50% 50%;
+ /* background-blend-mode: overlay;*/
 }

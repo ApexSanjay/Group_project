@@ -1,18 +1,18 @@
 h1{
-    text-align:center;
-  }
-  .page-footer{
-  width:100%;
-  height: auto;
-  overflow: hidden;
-  position: relative;
-  z-index: 0;
-  background-color: lightgray;
-  background-repeat: no-repeat;
-  background-attachment: scroll; 
-  background-size: 50% 50%;
- /* background-blend-mode: overlay;*/
+  text-align:center;
+}
+.page-footer{
+width:100%;
+height: auto;
+overflow: hidden;
+position: relative;
+z-index: 0;
+background-color: lightgray;
+background-repeat: no-repeat;
+background-attachment: scroll; 
+background-size: 50% 50%;
+/* background-blend-mode: overlay;*/
 }
 a{
-  color:black;
+color:black;
 }

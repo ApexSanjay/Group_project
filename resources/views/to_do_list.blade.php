@@ -1,115 +1,38 @@
-@extends('layouts.app')
-
-@section('content')
+ <!-- section start -->
 
 <!DOCTYPE html>
 <html>
 <head>
-<h1>The Hong Kong Federation Of Youth Group</h1>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<title>Life Goal</title> <!-- title of the webpage -->
+<h1>The Hong Kong Federation Of Youth Group</h1> <!-- heading of the website -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href={{ asset('css/well_youth.css') }}>
+<link rel="stylesheet" href= {{ asset('css/course.css') }}>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<style>
-h1{
-  margin-top: 70px;
-  line-height: 1.3;
-  font-weight: 600;
-  font-size: 40px;
-  text-align: center;
-}
-h2{
-  margin-top: 70px;
-  line-height: 1.3;
-  font-weight: 600;
-  font-size: 40px;
-  text-align: center;
-}
-h4{
-  margin-top: 70px;
-  line-height: 1.3;
-  font-weight: 600;
-  font-size: 20px;
-  text-align: left;
-}
-a{
-  color:black;
-}
-h3{
-  text-align:center;
-  background-color:grey;
-  color:black;
-}
-* {
-  box-sizing: border-box;
-}
-p{
-  color:black;
-}
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 2px;
-  height:auto;
-  border:10px outset silver;
-  background-color:grey;
-}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
 
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-  border: 5px ;
-}
-.carousel {
-  width:100%;
-  height:auto;
-}
+<!-- Navbar Header-->
+<header class="header">
+  @extends('layouts.app')
+  @section('content')
+</header>
 
-
-/*                            */
-.hero-image{
-  width:100%;
-  height: 200px;
-  overflow: hidden;
-  position: relative;
-  z-index: 0;
-  background-color: lightgray;
-  background-repeat: no-repeat;
-  background-attachment: scroll; 
-  background-size: 50% 50%;
- /* background-blend-mode: overlay;*/
-}
-
-.page-footer{
-  width:100%;
-  height: auto;
-  overflow: hidden;
-  position: relative;
-  z-index: 0;
-  background-color: lightgray;
-  background-repeat: no-repeat;
-  background-attachment: scroll; 
-  background-size: 50% 50%;
- /* background-blend-mode: overlay;*/
-}
-
-</style>
 <body>
 
-<img src= {{ asset("img/bannner.jpeg") }} alt="Chicago" style="width:100%">
+<img src= {{ asset("img/wellbanner.jpg") }} alt="wellbanner" style="width:100%"> <!-- banner of the webpage -->
 
 <br/>
 <br/>
 <div class="hero-image">
   <div class="hero-text">
-  <h2>Life Goal</h2>
+  <h2>Life Goal</h2> <!-- heading of the webpage  -->
     
   </div>
 </div>
 
-<p>
+<p> <!-- text of introduction of Life Goal -->
   <ul>
     <li>Do you have a wish to do list in your life?</li>
     <li>After landing in life, the most important thing is to live a happy life and do what you want to do. But sometimes I want to do something, but I have no one to accompany me, so I am forced to shelve or cancel the plan. Or you are looking for a fresh combination, so that ordinary things can sparkle and leave better memories.</li>
@@ -117,8 +40,8 @@ p{
   </ul>
 </p>
 
-<u><h4>Our activities</h4></u>
-<div class="row">
+<u><h4>Our activities</h4></u> 
+<div class="row">  <!-- pictures of courses, the text can link to the activities benefit introduction -->
 <div class="column">
     <img src= {{ asset("img/act1.jpg") }} alt="camping" style="width:100%">
     <h3>
@@ -136,7 +59,7 @@ p{
   </div>
 </div>
 <div class="row">
-<div class="column">
+  <div class="column">
     <img src= {{ asset("img/act4.jpg") }} alt="tcourse" style="width:100%">
     <h3>
       <a href="#tcourse">Training Course</a></h3>
@@ -152,70 +75,70 @@ p{
       <a href="#diyclass">DIY Class</a></h3>
   </div>
 </div>
-<hr><hr>
-<p>
+
+ <!-- activities benefit introduction -->
 <h4><a name="camping">Camping :</h4>
-    <ul>
+<p>
+    <ol>
         <li>Keeps Your Fit & Healthy</li>
         <li>Gives You New Experiences and a Change of Scene</li>
         <li>​Connect with Others</li>
-    </ul>
+    </ol>
 </p>
 <hr>
-<p>
 <h4><a name="pcamp">Positive experience camp :</h4>
-    <ul>
+<p>
+    <ol>
         <li>Developing a new skill</li>
         <li>Self-taught study</li>
         <li>​Learning a new sport or activity</li>
         <li>​Learning to use new technology</li>
         <li>Acquiring new knowledge</li>
-    </ul>
+    </ol>
 </p>
 <hr>
-<p>
 <h4><a name="fcamp">Family day camp :</h4>
-    <ul>
+<p>
+    <ol>
         <li>The bonding time is constant</li>
         <li>Create memories</li>
         <li>​Rules are a little more lenient</li>
         <li>​Options for activities are endless</li>
-    </ul>
+    </ol>
 </p>
 <hr>
-<p>
 <h4><a name="tcourse">Training Course :</h4>
-    <ul>
+<p>
+    <ol>
         <li>Learn something new</li>
         <li>Make better decisions</li>
         <li>Helping others</li>
         <li>​Make youself more positive</li>
-    </ul>
+    </ol>
 </p>
 <hr>
-<p>
 <h4><a name="concert">Concert :</h4>
-    <ul>
+<p>
+    <ol>
         <li>More exercise. Increases coordination and mobility</li>
         <li>More social interaction. Improves cognition and speech</li>
         <li>Better overall health. Reduces pain and recovery time</li>
         <li>​Improves memory. Assists in memory recall</li>
-    </ul>
+    </ol>
 </p>
 <hr>
-<p>
 <h4><a name="diyclass">DIY Class :</h4>
-    <ul>
+<p>
+    <ol>
         <li>Learning a New Skill</li>
         <li>Satisfaction</li>
         <li>You can make it your own</li>
         <li>Way to spend time with your family</li>
-    </ul>
+    </ol>
 </p>
 
-<body>
 
-<footer>
+<footer>  <!-- footer contain button of Home/About/Courses/Contact Us -->
 <div class="page-footer col-sm-12 font-small indigo">
         <div class="container">
           <div class="row text-center d-flex justify-content-center pt-5 mb-3">
@@ -253,15 +176,22 @@ p{
                 
       <!-- Copyright -->
           <div class="footer-copyright text-center py-3">
-            © 2021 HKFYG Developed by San Serino. All Rights Reserved.
+          © 2021 HKFYG Developed by Hong Kong Polytechnic University. All Rights Reserved.
+                        <center> Web Application Group Project</center>
           </div>
           <!-- Copyright -->
         </div>
 </footer>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src=”https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js” integrity=”sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/” crossorigin=”anonymous”></script>
 
-</head>
 </body>
 </html>
-@endsection
+@endsection <!-- section end -->
 
 

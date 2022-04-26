@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap");
+
+h1{
+    text-align:center;
+  }
+  h4{
+    font-family:verdana;
+  }
+  
+  a{
+    color:black;
+  }
+  
+  p{
+      font-family: georgia;
+  }
+  
+  img {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+  }
+  
+  .title-col {
+    font-family:verdana;
+    font-size:30px;
+  
+  }
+  .carousel {
+  width:auto;
+  height:90%;
+  object-fit: contain;
+  }
+  
+  .carousel-inner{
+    border:10px outset silver;
+    background-color:grey;
+  }
+  
+  .page-footer{
+    width:100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+    background-color: lightgray;
+    background-repeat: no-repeat;
+    background-attachment: scroll; 
+    background-size: 50% 50%;
+   /* background-blend-mode: overlay;*/
+  }
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 2px;
+    height:auto;
+    border:10px outset silver;
+    background-color:grey;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    border: 5px ;
+  }
