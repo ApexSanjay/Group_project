@@ -21,7 +21,7 @@
         <div class="form-row">
             <div class="col">
                 <label for="memberID">Member ID</label>
-                <input type="number" class="form-control" name="memberID" placeholder="Member ID">
+                <input type="number" class="form-control" name="memberID" min='1' max="{{ $availableMemberID[0]->memberID }}" placeholder="Member ID">
             </div>
             <div class="col">
                 <label for="firstName">First Name</label>

@@ -31,14 +31,14 @@
   @endif
   <div class="card">
     <div class="card-header text-center font-weight-bold">
-      Registration Form
+      Activity Registration Form
     </div>
     <div class="card-body">
       <form name="main-form" id="main-form" method="post" action="{{url('store-form')}}">
        @csrf
        <div class="form-group">
             <label for="memberID">Member ID</label>
-            <input type="number" id="memberID" name="memberID" class="form-control" value="{{ old('memberID') }}" required="">
+            <input type="number" id="memberID" name="memberID" class="form-control" min=1 max="{{ $availableMemberID[0]->memberID }}" value="{{ old('memberID') }}" required="">
         </div>
         <div class="form-group">
           <label for="FirstName">First Name</label>

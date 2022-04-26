@@ -65,10 +65,6 @@ Route::get('/to_do_list', function () {
     return view('to_do_list');
 });
 
-Route::get('/registration', function () {
-    return view('registration');
-});
-
 Route::get('/about', function () {
     return view('about');
 });
@@ -79,10 +75,6 @@ Route::get('/contact', function () {
 
 Route::get('/courses', function () {
     return view('course');
-});
-
-Route::get('/questionaire', function () {
-    return view('questionaire');
 });
 
 Route::get('/health_game', function () {

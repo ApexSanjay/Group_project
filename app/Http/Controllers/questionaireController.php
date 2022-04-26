@@ -9,8 +9,11 @@ use Illuminate\Support\Facades\DB;
 class questionaireController extends Controller
 {
     public function index(){
-        return view('questionaire');
+        $availableMemberID = DB::table('members')->select('memberID')->where('memberID', DB::raw("(select max(`memberID`) from members)"))->get();
+        return view('questionaire',['availableMemberID'=>$availableMemberID]);
     }
+
+
 
     public function store(Request $request){
         $question = new questionnaire();

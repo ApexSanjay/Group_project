@@ -19,7 +19,7 @@
         <div class="form-row">
             <div class="col">
                 <label for="memberID">Member ID</label>
-                <input type="number" class="form-control" name="memberID" disabled value="{{ $availableMemberID[0]->memberID + 1}}">
+                <input type="number" class="form-control" name="memberID" disabled value="{{$availableMemberID[0]->memberID + 1}}">
             </div>
             <div class="col">
                 <label for="firstName">First Name</label>
