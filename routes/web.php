@@ -4,6 +4,7 @@ use App\Http\Controllers\gameController;
 use App\Http\Controllers\registrationController;
 use App\Http\Controllers\questionaireController;
 use App\Http\Controllers\adminController;
+use App\Http\Controllers\memberController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -42,6 +43,11 @@ Route::get('admin',[adminController::class, 'index']);
 Route::get('logout',[adminController::class,'logout']);
 Route::get('admin-form',[adminController::class, 'redirect']);
 //Admin routes
+
+//Member routes
+Route::get('member',[memberController::class, 'index']);
+Route::post('member-form',[memberController::class,'memberRegister']);
+//Member routes
 
 Route::get('/home', function () {
     return view('home');
