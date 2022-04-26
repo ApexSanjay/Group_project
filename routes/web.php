@@ -39,6 +39,8 @@ Route::get('game-form',[gameController::class, 'mark']);
 
 //Admin routes
 Route::get('admin',[adminController::class, 'index']);
+Route::get('logout',[adminController::class,'logout']);
+Route::get('admin-form',[adminController::class, 'redirect']);
 //Admin routes
 
 Route::get('/home', function () {

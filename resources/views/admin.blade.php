@@ -6,6 +6,11 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     </head>
     <body>
+    <div class="card" name="button" style="background-color:lightblue;">
+    <div class="text-right">
+        <button onclick="location.href = '{{ url('logout') }}'; " class="float-right submit-button" >Log out</button>
+    </div>
+    </div>
     <div class="=container" align="middle" style="background-color:lightblue;">
 </br>
         <div class="card"  style="width: 70rem;" name="staffTable" style="background-color:whitesmoke;">

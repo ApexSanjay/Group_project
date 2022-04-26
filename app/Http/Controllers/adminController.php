@@ -18,4 +18,22 @@ class adminController extends Controller
         $questionaires=DB::table('Questionnaire')->get();
         return view('admin',[ 'staffs'=> $staffs, 'members'=>$members, 'activities'=>$activities, 'registrations'=>$registrations, 'questionaires'=>$questionaires]);
     }
+
+    public function redirect(Request $request){
+        $user=$request->user;
+        $pass=$request->pass;
+
+        $this->validate($request,[
+            'user' => 'required|alphaNum',
+            'pass' => 'required|alphaNum'
+        ]);
+
+        if ($user=='admin' and $pass='pass'){
+            return redirect('admin');
+        }
+
+    }
+    public function logout(){
+        return view('home');
+    }
 }
