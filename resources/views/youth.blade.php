@@ -82,7 +82,52 @@ object-fit: contain;
   background-size: 50% 50%;
  /* background-blend-mode: overlay;*/
 }
+
+.img-info {
+  padding: 10px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  color: black;
+}
+
+
+.flip-box-back {
+  color: white;
+  transform: rotateY(180deg);
+}
 </style>
+
 </head>
 <h1>Youth Service</h1>
 <img src={{ asset("img/youth-banner.jpg") }} alt="Youth Service" style="width:100%; height:500px;">
@@ -101,12 +146,21 @@ object-fit: contain;
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img class="d-block w-100 h-100" src= {{ asset("img/foodworks.png") }}>
+      <div class="img-info">
+          The foodworks
+      </div>
     </div>
     <div class="carousel-item">
       <img class="d-block w-100" src= {{ asset("img/ManyBread.jpg") }}>
+      <div class="img-info">
+        Elder taking bread from event
+    </div>
     </div>
     <div class="carousel-item">
       <img class="d-block w-100" src= {{ asset("img/teens_with_bread.jpg") }}>
+      <div class="img-info">
+        teens found fresh bread
+    </div>
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -131,9 +185,19 @@ object-fit: contain;
     These bread donations are redistributed the same night to ImpactHk, the shelter for the homeless. <br><br>
 
     We cooperate with HKFoodWork and ImpactHK to reward teens for helping collecting bread in daytime or help sharing it in night time.
-    We are Glad that teens are having fun when the event ongoing, and decided to continue helping after the event end!<br><br>
-    <a href="Gallery.blade.php">view in gallery-></a>
-    </p></p>
+    We are Glad that teens are having fun when the event ongoing, and decided to continue helping after the event end!
+    <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <img src={{ asset("img/bread.jpg") }} style="width:250px">
+          </div>
+          <div class="flip-box-back">
+            <img src={{ asset("img/take.png") }} style="width:200px">
+          </div>
+        </div>
+      </div>
+      <a href="gallery" style="padding-left:60%; font-weight:blod;">view in gallery-></a>
+    </p>
     </div>
     </div>
     <footer>

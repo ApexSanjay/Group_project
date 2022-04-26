@@ -99,17 +99,17 @@ body {
 
 .column {
   float: left;
-  width: 25%;
+  width: 24%;
   padding: 10px;
 }
 
 .column img {
-  opacity: 0.8;
+  opacity: 1;
   cursor: pointer;
 }
 
 .column img:hover {
-  opacity: 1;
+  opacity: 0.8;
 }
 
 .row:after {
@@ -137,50 +137,50 @@ body {
 <h4 style="text-align: center;">Sharing Bread</h4>
 <div class="row">
     <div class="column">
-      <img src={{ asset("img/ManyBread.jpg") }} style="width:100%" onclick="Expand(this);">
+      <img src={{ asset("img/ManyBread.jpg") }} style="width:100%;border:6px ridge #ff6200;" onclick="Expand(this);">
     </div>
     <div class="column">
-      <img src={{ asset("img/teens_with_bread.jpg") }} style="width:100%" onclick="Expand(this);">
+      <img src={{ asset("img/teens_with_bread.jpg") }} style="width:100%;border:6px ridge #ff6200;" onclick="Expand(this);">
     </div>
     <div class="column">
-      <img src={{ asset("img/break_bread.jpg") }} style="width:100%" onclick="Expand(this);">
+      <img src={{ asset("img/break_bread.jpg") }} style="width:100%;border:6px ridge #ff6200;" onclick="Expand(this);">
     </div>
     <div class="column">
-        <img src={{ asset("img/bakery.jpg") }} style="width:100%" onclick="Expand(this);">
+        <img src={{ asset("img/bakery.jpg") }} style="width:100%;border:6px ridge #ff6200;" onclick="Expand(this);">
       </div>
   </div>
 
   <h4 style="text-align: center;">Playing with stray dogs</h4>
   <div class="row">
     <div class="column">
-      <img src={{ asset("img/doogs.jpg") }} style="width:100%" onclick="Expand(this);">
+      <img src={{ asset("img/doogs.jpg") }} style="width:100%;border:6px dashed #d9ff00;" onclick="Expand(this);">
     </div>
     <div class="column">
-      <img src={{ asset("img/dogs_event.jpg") }} style="width:100%" onclick="Expand(this);">
+      <img src={{ asset("img/dogs_event.jpg") }} style="width:100%;border:6px dashed #d9ff00;" onclick="Expand(this);">
     </div>
     <div class="column">
-      <img src={{ asset("img/dogs_walk.jpg") }} style="width:100%" onclick="Expand(this);">
+      <img src={{ asset("img/dogs_walk.jpg") }} style="width:100%;border:6px dashed #d9ff00;" onclick="Expand(this);">
     </div>
   </div>
 
   <h4 style="text-align: center;">Past group picture</h4>
   <div class="row">
     <div class="column">
-      <img src={{ asset("img/hkyg123.jpg") }} style="width:100%" onclick="Expand(this);">
+      <img src={{ asset("img/hkyg123.jpg") }} style="width:100%;;border:2px dotted #0011ff;" onclick="Expand(this);">
     </div>
     <div class="column">
-      <img src={{ asset("img/hkyouth.jpg") }} style="width:100%" onclick="Expand(this);">
+      <img src={{ asset("img/hkyouth.jpg") }} style="width:100%;;border:2px dotted #0011ff;" onclick="Expand(this);">
     </div>
     <div class="column">
-      <img src={{ asset("img/elder.jpg") }} style="width:100%" onclick="Expand(this);">
+      <img src={{ asset("img/elder.jpg") }} style="width:100%;border:2px dotted #0011ff;" onclick="Expand(this);">
     </div>
     <div class="column">
-        <img src={{ asset("img/adviceyouth.jpg") }} style="width:100%" onclick="Expand(this);">
+        <img src={{ asset("img/adviceyouth.jpg") }} style="width:100%;border:2px dotted #0011ff;" onclick="Expand(this);">
       </div>
   </div>
 
   <div class="thecon">
-    <img id="expandedImg" style="width:100%">
+    <img id="expandedImg" style="width:90%;border:6px double #9c1c94;">
   </div>
 
 
@@ -230,3 +230,4 @@ body {
       </div>
     </footer>
 @endsection
+
