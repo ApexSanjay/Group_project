@@ -40,7 +40,7 @@
   </ul>
 </p>
 
-<u><h4>Our activities</h4></u> 
+<u><h2>Our Activities</h2></u> 
 <div class="row">  <!-- pictures of courses, the text can link to the activities benefit introduction -->
 <div class="column">
     <img src= {{ asset("img/act1.jpg") }} alt="camping" style="width:100%">
