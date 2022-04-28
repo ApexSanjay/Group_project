@@ -30,7 +30,7 @@
                 <input type="text" class="form-control" name="lastName" placeholder="Last name">
             </div>
             <div class="col">
-                <label for="age">Last Name</label>
+                <label for="age">Age</label>
                 <input type="number" class="form-control" name="age" placeholder="Age">
             </div>
 
